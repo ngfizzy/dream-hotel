@@ -33,6 +33,10 @@
     color: var(--primary);
 }
 
+.color-muted {
+    color: #B1B1B1;
+}
+
 .font-black, .color-black, .text-black {
     color: var(--black);
 }
@@ -42,15 +46,41 @@
     line-height: 21px;
 }
 
+.font-medium, .text-medium {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-style-normal {
+    font-style: normal;
+    font-variant: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
 .bg-center {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
 }
 
+
+.bg-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .border-white {
     border: 1px solid #fff;
-
 }
 
 
@@ -220,9 +250,10 @@ button {
     width: 100%;
     height: 260px;
     display: flex;
-    justify-content: space-between;
-    align-items: space-between;
-    flex-wrap: wrap;;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .carousel-card {
@@ -233,6 +264,48 @@ button {
     width: 260px !important;
     height: 260px;
     background-color: var(--white);
+    box-sizing: content-box;
+}
+
+.carousel-card .icon-wrapper {
+    width: 59px !important;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.carousel-card .description {
+    padding: 0 20px;
+    height: 62px;
+    overflow: hidden;
+}
+
+.carousel-control {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center !important;
+    justify-content: center;
+
+}
+
+.carousel-control.control-left {
+    right: 100%;
+    top: 39%;
+    opacity: 0.3;
+}
+
+.carousel-control.control-right { 
+    right: -5%;
+    top: 39%;
 }
 
 
@@ -244,7 +317,7 @@ button {
     }
 
     .carousel {
-        width: 88%;
+        width: 100%;
         height: 540px;
         justify-content: center;
         align-items: center;
@@ -262,7 +335,6 @@ button {
     }
 
     .section {
-        /* height: fit-content; */
         border: 1px solid black;
     }
 
@@ -308,10 +380,6 @@ button {
     .banner {
         background-image: url('img/banner@2x.png');
     }
-
-    /* .about-section1 .right {
-        background-image: url('img/about@2x.png');
-    } */
 
     .about-section1 .section-content > div {
         width: 50%;
