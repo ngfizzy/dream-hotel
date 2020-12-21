@@ -27,13 +27,15 @@
     border-color: 1px solid black;
 }
 
+
 .color-primary,
 .font-primary,
 .text-primary {
     color: var(--primary);
 }
 
-.color-muted {
+.color-muted,
+.text-muted {
     color: #B1B1B1;
 }
 
@@ -81,6 +83,10 @@
 
 .border-white {
     border: 1px solid #fff;
+}
+
+.d-inline {
+    display: inline;
 }
 
 
@@ -234,11 +240,11 @@ button {
 
 
 
-.about-section1  .right {
+.about-section1  .right
+ {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 
@@ -309,6 +315,56 @@ button {
 }
 
 
+
+.testimonials-section .section-content-wrapper {
+    width: 70% !important;
+}
+
+
+
+.testimonial .profile{
+    height: 57px !important;
+    display: flex;
+    width: 150px !important;
+}
+
+.profile .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.profile .info > * {
+    margin: 0;
+}
+
+.profile .picture-wrapper {
+    width: 57px;
+    height: 57px;
+}
+.profile .picture {
+    width: 100% !important;
+    width: 57px !important;
+}
+
+.profile .picture-wrapper .profession {
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.pages {
+    width: 80px;
+}
+
+
+.pages .bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
 /* Media Queries */
 
 @media all and (max-width: 768px) {
@@ -334,10 +390,6 @@ button {
         align-items: center;
     }
 
-    .section {
-        border: 1px solid black;
-    }
-
     .section-content {
         width: 100% !important;
         height: fit-content;
@@ -353,7 +405,8 @@ button {
     }
 
 
-    .about-section1 .section-content > div {
+    .about-section1 .section-content > div
+    .image-section .section-content > div {
         width: 89%;
         margin: auto;
         padding-bottom: 10px;
@@ -364,29 +417,67 @@ button {
         width: 100% !important;
     } */
 
-    .about-section1 .section-content-wrapper  img {
+    .about-section1 .section-content-wrapper  .img,
+    .image-section .section-content-wrapper  .img {
         width: 100%;
     }
 
 
-
-    .about-section div {
-        /* padding: 20px; */
+    .image-section .left .section-content-wrapper {
+        margin: auto;
+        width: 480px !important;
     }
+    
 }
 
 
 @media all and (min-width: 768.99px) {
+    .image-section .left .section-content-wrapper{
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .banner {
         background-image: url('img/banner@2x.png');
     }
 
-    .about-section1 .section-content > div {
-        width: 50%;
+
+    .about-section1 .section-content > div,
+    .image-section  .section-content > div{
+        width: 50% !important;
+    }
+
+    .image-section  .section-content > div{
+        height: 100% !important;
+        /* width: 100%!important; */
+    }
+
+    .image-section  .section-content .section-content-wrapper {
+        height: 100% !important;
+        width: 100%!important;
+    }
+
+    .image-section .section-content {
+        width: 100% !important;
+    }
+
+    .image-section  .section-content .section-content-wrapper .img {
+        width: 100% !important;
+        height: 100% !important;
+        /* width: 513px !important; */
+        margin-left: auto;
+    }
+    
+
+    .image-section .left  .section-content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 55% !important
     }
 
     .section {
-        /* padding: 0 384px; */
         padding: 10px;
         margin: auto;
     }
