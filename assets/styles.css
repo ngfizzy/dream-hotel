@@ -5,6 +5,7 @@
     --black: #000;
     --white: #fff;
     --primary: #5863F8;
+    --grey: #D1D1D1;
 }
 
 .ml-auto {
@@ -343,6 +344,7 @@ button {
     width: 57px;
     height: 57px;
 }
+
 .profile .picture {
     width: 100% !important;
     width: 57px !important;
@@ -356,13 +358,21 @@ button {
 
 .pages {
     width: 80px;
+    list-style-type: none;
+    padding: 0;
 }
 
 
 .pages .bullet {
     width: 10px;
     height: 10px;
+    display: inline-block;
+    background-color: var(--grey);
     border-radius: 100%;
+}
+
+.pages .bullet.selected {
+    background-color: var(--primary);
 }
 
 /* Media Queries */
@@ -411,6 +421,10 @@ button {
         margin: auto;
         padding-bottom: 10px;
         height: fit-content;
+    }
+
+    .image-section {
+        background: #f8f8f8 0, 0, no-repeat padding-box;
     }
 
     /* .about-section1 .left .section-content-wrapper  {
