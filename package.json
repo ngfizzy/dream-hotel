@@ -1,0 +1,24 @@
+{
+  "name": "dream-hotel",
+  "version": "1.0.0",
+  "description": "A hotel promotional page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngfizzy/dream-hotel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngfizzy/dream-hotel/issues"
+  },
+  "homepage": "https://github.com/ngfizzy/dream-hotel#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
