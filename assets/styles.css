@@ -517,12 +517,44 @@ button {
         width: 100%;
     }
 
+    .image-section {
+        width: 100% !important;
+    }
+
 
     .image-section .left .section-content-wrapper {
         margin: auto;
         width: 480px !important;
     }
     
+}
+
+@media all and (max-width: 750px) {
+    .image-section {
+        height: fit-content;
+    }
+
+    .image-section .img,
+    .testimonials-section .section-content-wrapper {
+        width: 100% !important;
+    }
+
+    .food-wrapper,
+    .food-section .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .food-section .left {
+        width: 75% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .food-card {
+        margin-bottom: 10px;
+    }
 }
 
 
