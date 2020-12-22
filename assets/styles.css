@@ -545,6 +545,70 @@ button {
     margin: auto;
 }
 
+.photos-section {
+    margin-bottom: -13px !important;
+}
+
+.footer {
+    background-color: #121212;
+    height: 395px;
+    width: 100%;
+    display: flex;
+    padding: 0 134px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .wrapper { 
+    display: flex;
+    width: 1155px;
+    border: 1px solid white;
+}
+
+
+.footer div {
+    border: 1px solid blue;
+    height: 100%;
+}
+
+.footer .info {
+    width: 450px;
+    height: fit-content;
+}
+
+.footer .useful-links,
+.footer .info {
+    margin-top: 10%;
+    border: 1px solid white;
+
+}
+
+.footer .useful-links {
+    width:303px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer .useful-links .left {
+    left: 39%;
+}
+.footer .useful-links .right {
+    width: 50%;
+    
+}
+
+.footer .info .info-wrapper {
+    width: 250px;
+}
+
+
+.footer .info p {
+    font-size: 14px;
+}
+
+
 /* Media Queries */
 
 @media all and (max-width: 768px) {
