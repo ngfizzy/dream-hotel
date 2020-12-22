@@ -40,8 +40,11 @@
     color: #B1B1B1;
 }
 
+.text-upper {
+    text-transform: uppercase !important;
+}
 .font-black, .color-black, .text-black {
-    color: var(--black);
+    color: var(--black) !important;
 }
 
 .font-normal {
@@ -68,7 +71,7 @@
 }
 
 .bg-primary {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 
 .bg-center {
@@ -77,6 +80,9 @@
     background-position: center;
 }
 
+.bg-white {
+    background-color: var(--white) !important;
+}
 
 .bg-dark-transparent {
     background-color: rgba(0, 0, 0, 0.4);
@@ -316,7 +322,6 @@ button {
 }
 
 
-
 .testimonials-section .section-content-wrapper {
     width: 70% !important;
 }
@@ -375,6 +380,85 @@ button {
     background-color: var(--primary);
 }
 
+.image-section .left {
+    background: #f8f8f8;
+}
+
+.food-wrapper {
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-evenly;
+}
+
+.food-card {
+    position: relative;
+}
+
+.food-wrapper .food-card {
+    height: 200px;
+    background-color: #f8f8f8;
+    width: 536px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.food-card .icon-wrapper {
+    height: 200px;
+    width: 200px !important;
+    padding-bottom: 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.food-card .description-wrapper {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    padding-left: 10px;
+}
+
+.food-card .description-wrapper > p {
+    height: 60px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-card .description-wrapper > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.food-wrapper .icon-wrapper .img {
+    width: 100%;
+    height: 100%;
+}
+
+.food-section .left {
+    width: 60%;
+}
+
+.food-section .left .section-content-wrapper {
+    width: 100% !important;
+}
+
+
+
+
+.food-control {
+    z-index: 100;
+    margin-left: auto;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
+
 /* Media Queries */
 
 @media all and (max-width: 768px) {
@@ -423,9 +507,6 @@ button {
         height: fit-content;
     }
 
-    .image-section {
-        background: #f8f8f8 0, 0, no-repeat padding-box;
-    }
 
     /* .about-section1 .left .section-content-wrapper  {
         width: 100% !important;
