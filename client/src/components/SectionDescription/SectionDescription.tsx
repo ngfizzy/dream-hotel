@@ -26,7 +26,7 @@ export const SectionDescription:FC<Props> = ({
         <h3 className={`SectionHeading  ${invertColor ? 'text-white' : ''}`}>
           <MultilineText text={heading || ''} />
         </h3>
-        <h4 className={`SectionSubheading ${invertColor ? 'text-white' : ''}`}>{subheading}</h4>
+      { subheading ? <h4 className={`SectionSubheading ${invertColor ? 'text-white' : ''}`}>{subheading}</h4>: null}
         <span className="font-normal Desc">
           {details}
         </span>

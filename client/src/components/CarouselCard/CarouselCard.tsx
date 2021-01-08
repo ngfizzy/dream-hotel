@@ -7,6 +7,7 @@ interface Props {
   heading: string;
   body: string;
 }
+
 export const CarouselCard:FC<Props> = ({ heading, body }) => {
   return   <div className="CarouselCard">
     <div className="bg-primary icon-wrapper">

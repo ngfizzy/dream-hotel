@@ -14,3 +14,10 @@
   width: 100%;
 }
 
+.ImageDescriptionSectionContent .Image.Full {
+  height: 644px;
+}
+
+.ImageDescriptionSectionContent .Image.Full img {
+  height: 100%;
+}

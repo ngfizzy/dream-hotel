@@ -19,7 +19,6 @@ a {
   height: fit-content;
 }
 
-
 button {
   cursor: pointer;
 }
@@ -41,51 +40,6 @@ button {
   align-items: center;
 }
 
-
-
-
-
-
-
-
-.testimonials-section .section-content-wrapper {
-  width: 70% !important;
-}
-
-
-
-.testimonial .profile{
-  height: 57px !important;
-  display: flex;
-  width: 150px !important;
-}
-
-.profile .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly;
-}
-
-.profile .info > * {
-  margin: 0;
-}
-
-.profile .picture-wrapper {
-  width: 57px;
-  height: 57px;
-}
-
-.profile .picture {
-  width: 100% !important;
-  width: 57px !important;
-}
-
-.profile .picture-wrapper .profession {
-  color: rgba(0, 0, 0, .5);
-  font-size: 12px;
-  line-height: 18px;
-}
 
 .pages {
   width: 80px;
@@ -121,7 +75,6 @@ button {
 .food-card {
   position: relative;
 }
-
 
 .food-wrapper .food-card {
   height: 200px;
@@ -560,7 +513,10 @@ button {
   }
 
   .section {
-      padding: 10px;
-      margin: auto;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    margin-left: -2rem;
+    margin-right: auto;
   }
 }

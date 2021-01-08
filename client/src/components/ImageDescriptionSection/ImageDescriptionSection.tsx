@@ -2,11 +2,16 @@ import React, { FC } from 'react';
 
 import './ImageDescriptionSection.css';
 
-export const ImageDescriptionSection :FC<{image?: string;}> =({children, image}) => {
+interface Props {
+  image?:string;
+  full?: boolean;
+}
+
+export const ImageDescriptionSection :FC<Props> =({children, image, full}) => {
   return <div className="ImageDescriptionSection">
     <div className={`ImageDescriptionSectionContent`}>
       {children}
-      {image? <div className="Image">
+      {image? <div className={`Image ${full? 'Full': ''}`} >
           <img src={image}  alt="ad" />
       </div>: null}
     </div>
