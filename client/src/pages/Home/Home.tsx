@@ -1,8 +1,24 @@
-import React, {FC} from 'react'
+import React, {FC} from 'react';
+
+import aboutImage from '../../assets/img/about.png';
+import serviceIcon from '../../assets/img/service-icon.svg';
+import johnDoeImage from '../../assets/img/marius-ciocirlan-vMV6r4VRhJ8-unsplash.png';
+import rhemaUnsplashImage from '../../assets/img/rhema-unsplash.png';
+import fishImage from '../../assets/img/fish.png';
+import chocolateImage from '../../assets/img/chocolate.png';
+import foodAndLifeImage from '../../assets/img/food-and-life.png';
+import beachUnsplashImage from '../../assets/img/beach-unsplash.png';
+import sofaImage from '../../assets/img/sofa.png';
+import barImage from '../../assets/img/bar.png';
+import hallImage from '../../assets/img/hall.png';
+import facebookImage from '../../assets/img/001-facebook.svg';
+import twitterImage from '../../assets/img/002-twitter.svg';
+import gPlusImage from '../../assets/img/004-google-plus.svg';
+import sendImage from '../../assets/img/send.svg';
 
 export const Home: FC = () => {
   return (
-    <main className="container">
+    <main className="Container">
       {/* Banner section */}
       <section className="section bg-center banner">
           <div className="section-content">
@@ -54,7 +70,7 @@ export const Home: FC = () => {
               </div>
               <div className="right">
                   <div className="section-content-wrapper">
-                      <img  className="img" src="/assets/img/about.png" alt="about" />
+                      <img  className="img" src={aboutImage} alt="about" />
                   </div>
               </div>
           </div>
@@ -74,7 +90,7 @@ export const Home: FC = () => {
 
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src="/assets/img/service-icon.svg" alt="services" />
+                  <img className="img icon" src={serviceIcon} alt="services" />
               </div>
               <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
               <p className="font-normal color-muted description">
@@ -86,7 +102,7 @@ export const Home: FC = () => {
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src="/assets/img/service-icon.svg" alt="services" />
+                  <img className="img icon" src={serviceIcon} alt="services" />
               </div>
               <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
               <p className="font-normal color-muted description">
@@ -98,7 +114,7 @@ export const Home: FC = () => {
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src="/assets/img/service-icon.svg" alt="services" />
+                  <img className="img icon" src={serviceIcon} alt="services" />
               </div>
               <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
               <p className="font-normal color-muted description">
@@ -110,7 +126,7 @@ export const Home: FC = () => {
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                <img   className="icon" src="/assets/img/service-icon.svg" alt="services" />
+                <img   className="icon" src={serviceIcon} alt="services" />
               </div>
               <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
               <p className="font-normal color-muted description">
@@ -133,7 +149,7 @@ export const Home: FC = () => {
               <div className="testimonial">
                 <div className="profile">
                   <div className="picture-wrapper">
-                    <img  className="picture" src="/assets/img/marius-ciocirlan-vMV6r4VRhJ8-unsplash.png" alt="marcus" />
+                    <img  className="picture" src={johnDoeImage} alt="marcus" />
                   </div>
                   <div className="info">
                     <h5 className="font-normal font-black">John Doe</h5>
@@ -156,7 +172,7 @@ export const Home: FC = () => {
           </div>
           <div className="right">
             <div className="section-content-wrapper">
-              <img className="img" src="/assets/img/rhema-unsplash.png" alt="icon" />
+              <img className="img" src={rhemaUnsplashImage} alt="icon" />
             </div>
           </div>
         </div>
@@ -176,7 +192,7 @@ export const Home: FC = () => {
           <div className="food-wrapper">
           <div className="food-card">
             <div className="icon-wrapper">
-              <img className="img icon" src="/assets/img/fish.png" alt="fish" />
+              <img className="img icon" src={fishImage} alt="fish" />
             </div>
             <div className="description-wrapper">
               <h2 className="font-normal font-primary text-upper">Food</h2>
@@ -188,7 +204,7 @@ export const Home: FC = () => {
           </div>
           <div className="food-card">
               <div className="icon-wrapper">
-                  <img className="img icon" src="/assets/img/chocolate.png" alt="fish" />
+                  <img className="img icon" src={chocolateImage} alt="choco" />
               </div>
               <div className="description-wrapper">
                 <h2 className="font-normal font-primary text-upper">Desert</h2>
@@ -200,7 +216,7 @@ export const Home: FC = () => {
           </div>
           <div className="food-card">
             <div className="icon-wrapper">
-              <img className="img icon" src="/assets/img/chocolate.png" alt="fish" />
+              <img className="img icon" src={chocolateImage} alt="choco" />
             </div>
             <div className="description-wrapper">
               <h2 className="font-normal font-primary text-upper">Desert</h2>
@@ -212,7 +228,7 @@ export const Home: FC = () => {
           </div>
           <div className="food-card">
             <div className="icon-wrapper">
-              <img className="img icon" src="/assets/img/fish.png" alt="fish" />
+              <img className="img icon" src={fishImage} alt="fish" />
             </div>
             <div className="description-wrapper">
               <h2 className="font-normal font-primary text-upper">Food</h2>
@@ -237,7 +253,7 @@ export const Home: FC = () => {
           <div className="blog-wrapper">
             <div className="blog-card">
               <div className="icon-wrapper">
-                <img className="img icon" src="/assets/img/food-and-life.png" alt="fish" />
+                <img className="img icon" src={foodAndLifeImage} alt="food" />
               </div>
               <div className="description-wrapper text-center">
                 <h2 className="font-normal font-primary text-upper">Food and Life</h2>
@@ -249,7 +265,7 @@ export const Home: FC = () => {
             </div>
             <div className="blog-card">
               <div className="icon-wrapper">
-                <img className="img icon" src="/assets/img/fish.png" alt="fish" />
+                <img className="img icon" src={fishImage} alt="fish" />
               </div>
               <div className="description-wrapper text-center">
                 <h2 className="font-normal font-primary text-upper">Cooking</h2>
@@ -261,7 +277,7 @@ export const Home: FC = () => {
             </div>
             <div className="blog-card">
               <div className="icon-wrapper">
-                <img className="img icon" src="/assets/img/chocolate.png" alt="fish" />
+                <img className="img icon" src={chocolateImage} alt="chocolate image2" />
               </div>
               <div className="description-wrapper text-center">
                 <h2 className="font-normal font-primary text-upper">Fruits</h2>
@@ -273,7 +289,7 @@ export const Home: FC = () => {
             </div>
             <div className="blog-card">
               <div className="icon-wrapper">
-                <img className="img icon" src="/assets/img/chocolate.png" alt="fish" />
+                <img className="img icon" src={chocolateImage} alt="chocolate image3" />
               </div>
               <div className="description-wrapper text-center">
                 <h2 className="font-normal font-primary text-upper">Fruits</h2>
@@ -285,7 +301,7 @@ export const Home: FC = () => {
             </div>
             <div className="blog-card">
               <div className="icon-wrapper">
-                <img className="img icon" src="/assets/img/fish.png" alt="fish" />
+                <img className="img icon" src={fishImage} alt="fish" />
               </div>
               <div className="description-wrapper text-center">
                 <h2 className="font-normal font-primary text-upper">Cooking</h2>
@@ -297,7 +313,7 @@ export const Home: FC = () => {
             </div>
             <div className="blog-card">
                 <div className="icon-wrapper">
-                  <img className="img icon" src="/assets/img/food-and-life.png" alt="fish" />
+                  <img className="img icon" src={foodAndLifeImage} alt="food and life" />
                 </div>
                 <div className="description-wrapper text-center">
                   <h2 className="font-normal font-primary text-upper">Food and Life</h2>
@@ -324,22 +340,22 @@ export const Home: FC = () => {
             <span className="carousel-control control-right text-center bg-primary">→</span>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                <img className="img icon" src="assets/img/beach-unsplash.png" alt="services" />
+                <img className="img icon" src={beachUnsplashImage} alt="services" />
               </div>
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                <img className="img icon" src="assets/img/sofa.png" alt="services" />
+                <img className="img icon" src={sofaImage} alt="services" />
               </div>
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                <img className="img icon" src="assets/img/bar.png" alt="services" />
+                <img className="img icon" src={barImage} alt="services" />
               </div>
             </div>
             <div className="carousel-card">
               <div className="bg-primary icon-wrapper">
-                <img className="icon" src="assets/img/hall.png" alt="services" />
+                <img className="icon" src={hallImage} alt="services" />
               </div>
             </div>
           </div>
@@ -356,9 +372,9 @@ export const Home: FC = () => {
                 from our staff.
               </p>
               <span className="social-icons">
-                <img src="/assets/img/001-facebook.svg" alt="" />
-                <img src="/assets/img/002-twitter.svg" alt="" />
-                <img src="/assets/img/004-google-plus.svg"  alt="" />
+                <img src={facebookImage} alt="" />
+                <img src={twitterImage} alt="" />
+                <img src={gPlusImage}  alt="" />
               </span>
             </div>
           </div>
@@ -390,15 +406,15 @@ export const Home: FC = () => {
             <div className="contact-wrapper">
               <h3>Contact Info</h3>
               <div className="contact-item">
-                <img className="color-primary d-inline-block v-align-middle mr-5" src="/assets/img/mail.svg" alt="" />
+                <img className="color-primary d-inline-block v-align-middle mr-5" src="assets/img/mail.svg" alt="" />
                 <span className="font-normal d-inline-block v-align-middle mr-5">example@yahoo.com</span>
               </div>
               <div className="contact-item">
-                <img className="color-primary d-inline-block v-align-middle mr-5" src="/assets/img/phone.svg" alt="" />
+                <img className="color-primary d-inline-block v-align-middle mr-5" src="assets/img/phone.svg" alt="" />
                 <span className="font-normal d-inline-block v-align-middle mr-5"> +0 320 422 4254</span>
               </div>
               <div className="contact-item">
-                <img className="color-primary d-inline-block v-align-middle mr-5" src="/assets/img/map-pin.svg" alt="" />
+                <img className="color-primary d-inline-block v-align-middle mr-5" src="assets/img/map-pin.svg" alt="" />
                 <span className="font-normal d-inline-block v-align-middle mr-5">Main Str Chicago Illinois</span>
               </div>
               <br />
@@ -433,7 +449,7 @@ export const Home: FC = () => {
             </div>
             <div className="form-group button-wrapper">
               <button className="button submit-button bg-primary" type="button" placeholder="rooms">
-                <img src="/assets/img/send.svg" alt="" />
+                <img src={sendImage} alt="" />
               </button>
             </div>
           </form>

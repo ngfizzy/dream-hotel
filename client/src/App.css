@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.Container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,10 +29,9 @@ a {
 
 .banner {
   display: flex;
-  background-image: url('./assets/img/banner.png');
+  background-image: url('assets/img/banner.png');
   align-items: center;
 }
-
 
 .header .heading {
   margin-top: 25%;
