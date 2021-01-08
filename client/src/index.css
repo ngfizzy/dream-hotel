@@ -113,6 +113,15 @@
   margin-right: 5px;
 }
 
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
 
 /* Defaults */
 html,

@@ -1,0 +1,32 @@
+.SectionDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  width: 39%;
+}
+
+.SectionLabel,
+.SectionHeading, 
+.section-subheading {
+  margin: 10px 0;
+}
+
+.SectionHeading {
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.SectionSubheading {
+  font-size: 16px;
+  font-weight: bolder;
+  height: 76px;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', 'Medium';
+}
+
+

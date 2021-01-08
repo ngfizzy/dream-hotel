@@ -8,6 +8,8 @@ interface Props {
   style?: {[key: string]: string}
   isBanner?: boolean;
   bgImage?: string;
+  fill?: boolean;
+  label?: string;
 }
 
 const getSectionClasses = ({isBanner}: Omit<Props, 'style'>) => {
@@ -19,13 +21,23 @@ const getSectionClasses = ({isBanner}: Omit<Props, 'style'>) => {
 
   return className;
 }
-export const Section: FC<Props> = ({children, isBanner, style, bgImage}) => {
+
+const getSectionContentClasses = (fill?: boolean) => {
+  let className = 'SectionContent ';
+
+  if(fill) {
+    className += 'Fill ';
+  }
+
+  return className;
+}
+export const Section: FC<Props> = ({children, isBanner, style, bgImage, fill}) => {
   return (
     <section
-      className={getSectionClasses({isBanner})}
+      className={getSectionClasses({isBanner, fill})}
       style={{...style, backgroundImage: `url(${bgImage})`}}
     >
-      <div className="SectionContent">
+      <div className={getSectionContentClasses(fill)}>
         {children}
       </div>
     </section>

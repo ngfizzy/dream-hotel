@@ -1,7 +1,7 @@
 .Navbar {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 32rem;
+  /* margin-bottom: 58rem; */
   width: 100%
 }
 

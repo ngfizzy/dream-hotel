@@ -19,6 +19,8 @@ import bannerImage from '../../assets/img/banner.png';
 import { Section } from '../../components/Section';
 import { Navbar } from '../../components/Navbar';
 import { PageHeading } from '../../components/PageHeading';
+import { ImageDescriptionSection } from '../../components/ImageDescriptionSection';
+import { SectionDescription } from '../../components/SectionDescription';
 
 const pageHeading = {
   heading: 'The best hotel you will ever need',
@@ -29,18 +31,45 @@ const pageHeading = {
     ullamco laboris nisi ut aliquip ex ea commodo consequat.`
 }
 
+const about1 = {
+  label: 'About',
+  heading: 'Trust and quality are our atuus',
+  subheading: `Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit, sed 
+  do eiusmod tempor incididunt ut labore et dolore
+  magna aliqua. Ut enim ad minim veniam, 
+  quis nostrud exercitation ullamco laboris nisi ut 
+  aliquip ex ea commodo consequat.`,
+  details: `          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+  ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+}
+
 export const Home: FC = () => {
   return (
     <main className="Container">
       {/* Banner section */}
-      <Section isBanner={true} bgImage={bannerImage}>
-          <Navbar />
-          <PageHeading {...pageHeading} />
+      <Section
+        isBanner={true}
+        bgImage={bannerImage}
+      >
+        <Navbar />
+        <PageHeading {...pageHeading} />
       </Section>
 
-
       <Section>
-        <div className="left">
+        <ImageDescriptionSection image={aboutImage}>
+          <SectionDescription 
+            label={about1.label}
+            heading={about1.heading}
+            subheading={about1.subheading}
+            details={about1.details}
+          >
+            <button className="button-primary d-inline-flex fit-content">read more → </button>
+          </SectionDescription>
+        </ImageDescriptionSection>
+        {/* <div className="left">
           <div className="section-content-wrapper">
             <h2 className="color-primary font-normal section-label">About us</h2>
               <h3 className="section-heading">Trust and quality are our atuus</h3>
@@ -60,12 +89,12 @@ export const Home: FC = () => {
               </p>
               <button className="button-primary">read more → </button>
             </div>
-          </div>
-            <div className="right">
-                  <div className="section-content-wrapper">
-                      <img  className="img" src={aboutImage} alt="about" />
-                  </div>
-              </div>
+          </div> */}
+        {/* <div className="right">
+            <div className="section-content-wrapper">
+                <img  className="img" src={aboutImage} alt="about" />
+            </div>
+          </div> */}
 
       </Section>
 
