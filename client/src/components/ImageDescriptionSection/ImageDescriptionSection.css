@@ -21,3 +21,7 @@
 .ImageDescriptionSectionContent .Image.Full img {
   height: 100%;
 }
+
+.FlexReversed {
+  flex-direction: row-reverse;
+}

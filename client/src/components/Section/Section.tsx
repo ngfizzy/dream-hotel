@@ -16,8 +16,9 @@ const getSectionClasses = ({isBanner}: Omit<Props, 'style'>) => {
   let className = 'Section bg-center ';
 
   if(isBanner)  {
-    className += 'Banner';
+    className += 'Banner ';
   }
+
 
   return className;
 }
