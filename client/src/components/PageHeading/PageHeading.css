@@ -1,0 +1,32 @@
+.PageHeading {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-shrink: 0;
+  margin-top: -42rem;
+  color: var(--white);
+}
+
+.PageHeading > h1 {
+  font-size: 62px;
+  line-height: 73px;
+  flex-shrink: 0;
+}
+
+.PageHeading > p {
+  width: 349px;
+  height: 64px;
+  overflow: hidden;
+}
+
+
+
+
+@media all and (max-width: 768px) {
+
+  .PageHeading > h1 {
+    font-size: 42px;
+    line-height: 36.5px;
+  }
+
+}

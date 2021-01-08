@@ -114,6 +114,16 @@
 }
 
 
+/* Defaults */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body, a {
   color: var(--white);
 }

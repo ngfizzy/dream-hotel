@@ -12,84 +12,16 @@ a {
   flex-wrap: wrap; */
 }
 
-.section {
-  width: 100%;
-  height: 662px;
-  flex-shrink: 1;
-}
-
-.section-content {
-  width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-};
-
-.banner {
-  display: flex;
-  background-image: url('assets/img/banner.png');
-  align-items: center;
-}
-
-.header .heading {
-  margin-top: 25%;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.banner > .navbar {
-  margin-top: 20px;
-}
-
-.navbar > .link {
-  text-transform: uppercase;
-  margin: 0 20px;
-  /* font: normal normal medium 12px/18px 'Poppins'; */
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: medium;
-}
-
-.navbar .brand-link {
-  margin-right: auto;
-  align-self: left;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  flex-shrink: 0;
- 
-}
-
-.header > h1 {
-  font-size: 62px;
-  line-height: 73px;
-  flex-shrink: 0;
-}
-
-.header > p {
-  width: 349px;
-  height: 64px;
-  overflow: hidden;
-}
 
 
 
-.about-section > .section-content {
-  height: 100%;
-  color: var(--black);
-}
 
-.about-section .section-content  div {
-  width: 100%;
-}
+
+
+
+
+
+
 
 .section-title,
 .section-heading, 
@@ -612,10 +544,7 @@ button {
       width: 100%;
   }
 
-  .header > h1 {
-      font-size: 42px;
-      line-height: 36.5px;
-  }
+
 
 
   .about-section1 .section-content > div
@@ -649,16 +578,6 @@ button {
 }
 
 @media all and (max-width: 750px) {
-  .section {
-      height: auto !important;
-      min-height: 662px;
-  }
-
-  .about-section .section-content div {
-      width: 100%;
-      height: 100%;
-      align-items: center;
-  }
 
   .image-section {
       height: fit-content;
@@ -701,7 +620,7 @@ button {
   }
 
   .about-section1 .section-content > div,
-  .image-section  .section-content > div{
+  .image-section  .section-content > div {
       width: 50% !important;
   }
 

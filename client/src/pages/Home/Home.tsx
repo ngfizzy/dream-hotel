@@ -15,66 +15,59 @@ import facebookImage from '../../assets/img/001-facebook.svg';
 import twitterImage from '../../assets/img/002-twitter.svg';
 import gPlusImage from '../../assets/img/004-google-plus.svg';
 import sendImage from '../../assets/img/send.svg';
+import bannerImage from '../../assets/img/banner.png';
+import { Section } from '../../components/Section';
+import { Navbar } from '../../components/Navbar';
+import { PageHeading } from '../../components/PageHeading';
+
+const pageHeading = {
+  heading: 'The best hotel you will ever need',
+  subheading: `Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+    dolore magna 
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+    ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+}
 
 export const Home: FC = () => {
   return (
     <main className="Container">
       {/* Banner section */}
-      <section className="section bg-center banner">
-          <div className="section-content">
-              <nav className="ml-auto mr-auto navbar">
-                  <a className="link" href="/#">Contact</a>
-                  <a className="link" href="/#">Blog</a>
-                  <a className="link" href="/#">About Us</a>
-                  <a className="link" href="/#">Restaurant</a>
-                  <a className="link" href="/#">Rooms</a>
-                  <a className="link" href="/#">Home</a>
-                  <a className="link brand-link" href="/#">Zetta Hotel</a>
-              </nav>
+      <Section isBanner={true} bgImage={bannerImage}>
+          <Navbar />
+          <PageHeading {...pageHeading} />
+      </Section>
 
-              <header className="header">
-                  <h1 className="heading">The best hotel you will ever need</h1>
-                  <p className="font-normal">
-                      Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                      dolore magna 
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-              </header>
+
+      <Section>
+        <div className="left">
+          <div className="section-content-wrapper">
+            <h2 className="color-primary font-normal section-label">About us</h2>
+              <h3 className="section-heading">Trust and quality are our atuus</h3>
+              <h4 className="section-subheading">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed 
+                  do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat.
+              </h4>
+              <p className="font-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button className="button-primary">read more → </button>
+            </div>
           </div>
-      </section>
-
-      <section className="section about-section about-section1">
-          <div className="section-content">
-            <div className="left">
-                <div className="section-content-wrapper">
-                  <h2 className="color-primary font-normal section-label">About us</h2>
-                      <h3 className="section-heading">Trust and quality are our atuus</h3>
-                      <h4 className="section-subheading">
-                          Lorem ipsum dolor sit amet, 
-                          consectetur adipiscing elit, sed 
-                          do eiusmod tempor incididunt ut labore et dolore
-                          magna aliqua. Ut enim ad minim veniam, 
-                          quis nostrud exercitation ullamco laboris nisi ut 
-                          aliquip ex ea commodo consequat.
-                      </h4>
-                      <p className="font-normal">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                          sed do eiusmod tempor incididunt ut labore et dolore magna
-                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                      <button className="button-primary">read more → </button>
-                  </div>
-              </div>
-              <div className="right">
+            <div className="right">
                   <div className="section-content-wrapper">
                       <img  className="img" src={aboutImage} alt="about" />
                   </div>
               </div>
-          </div>
-      </section>
+
+      </Section>
 
       <section className="section  about-section  bg-center bg-dark-transparent about-section2">
         <div className="section-content">
