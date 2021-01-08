@@ -8,7 +8,7 @@ const PORT = process.env.NODE_ENV === 'production' ? 80 : 4000;
 app.use(express.static('frontend'));
 
 app.all('*', (_, res) => {
-    return res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+    return res.sendFile(path.join(__dirname, 'client', 'pubic', 'index.html'));
 });
 
 // app.listen(PORT, '0.0.0.0', () => console.log('Server started'));

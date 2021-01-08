@@ -5,8 +5,8 @@ WORKDIR /var/www
 
 COPY . .
 
-RUN  npm install || true
+RUN cd client && npm install && npm build && \
+  cd .. && npm install
 
-EXPOSE 4000
 
 CMD [ "npm", "start" ]
