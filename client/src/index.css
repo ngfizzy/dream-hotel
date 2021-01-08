@@ -1,0 +1,119 @@
+
+/* Utils */
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --primary: #5863F8;
+  --grey: #D1D1D1;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.font-white, .color-white, .text-white {
+  color: var(--white);
+}
+
+.border-black {
+  border-color: 1px solid black;
+}
+
+
+.color-primary,
+.font-primary,
+.text-primary {
+  color: var(--primary);
+}
+
+.color-muted,
+.text-muted {
+  color: #B1B1B1;
+}
+
+.text-upper {
+  text-transform: uppercase !important;
+}
+.font-black, .color-black, .text-black {
+  color: var(--black) !important;
+}
+
+.font-normal {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-medium, .text-medium {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-style-normal {
+  font-style: normal;
+  font-variant: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.border-white {
+  border: 1px solid #fff;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.v-align-middle {
+  vertical-align: middle;
+}
+
+.flexible-section-662 {
+  height: auto !important;
+  min-height: 662px !important;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+
+body, a {
+  color: var(--white);
+}

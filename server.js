@@ -3,7 +3,6 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.NODE_ENV === 'production' ? 80 : 4000;
-console.log('using port >>', PORT);
 
 
 app.use(express.static('frontend'));
