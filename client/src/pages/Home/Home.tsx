@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 
 import aboutImage from '../../assets/img/about.png';
-import serviceIcon from '../../assets/img/service-icon.svg';
 import johnDoeImage from '../../assets/img/marius-ciocirlan-vMV6r4VRhJ8-unsplash.png';
 import rhemaUnsplashImage from '../../assets/img/rhema-unsplash.png';
 import fishImage from '../../assets/img/fish.png';
@@ -16,11 +15,14 @@ import twitterImage from '../../assets/img/002-twitter.svg';
 import gPlusImage from '../../assets/img/004-google-plus.svg';
 import sendImage from '../../assets/img/send.svg';
 import bannerImage from '../../assets/img/banner.png';
+import aboutSectionBg from '../../assets/img/about2.png';
+
 import { Section } from '../../components/Section';
 import { Navbar } from '../../components/Navbar';
 import { PageHeading } from '../../components/PageHeading';
 import { ImageDescriptionSection } from '../../components/ImageDescriptionSection';
 import { SectionDescription } from '../../components/SectionDescription';
+import { Carousel } from '../../components/Carousel';
 
 const pageHeading = {
   heading: 'The best hotel you will ever need',
@@ -46,6 +48,10 @@ const about1 = {
   ullamco laboris nisi ut aliquip ex ea commodo consequat.`
 }
 
+const about2 = {
+  label: 'About us',
+  heading: 'We bring you the \n finest details'
+}
 export const Home: FC = () => {
   return (
     <main className="Container">
@@ -69,98 +75,21 @@ export const Home: FC = () => {
             <button className="button-primary d-inline-flex fit-content">read more → </button>
           </SectionDescription>
         </ImageDescriptionSection>
-        {/* <div className="left">
-          <div className="section-content-wrapper">
-            <h2 className="color-primary font-normal section-label">About us</h2>
-              <h3 className="section-heading">Trust and quality are our atuus</h3>
-              <h4 className="section-subheading">
-                  Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, sed 
-                  do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua. Ut enim ad minim veniam, 
-                  quis nostrud exercitation ullamco laboris nisi ut 
-                  aliquip ex ea commodo consequat.
-              </h4>
-              <p className="font-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <button className="button-primary">read more → </button>
-            </div>
-          </div> */}
-        {/* <div className="right">
-            <div className="section-content-wrapper">
-                <img  className="img" src={aboutImage} alt="about" />
-            </div>
-          </div> */}
 
       </Section>
 
-      <section className="section  about-section  bg-center bg-dark-transparent about-section2">
-        <div className="section-content">
-          <div className="left text-white">
-            <div className="section-content-wrapper">
-              <h2 className="font-normal section-label text-primary">About us</h2>
-              <h3 className="section-heading">We bring you the finest details</h3>
-            </div>
-          </div>
-          <div className="carousel">
-            <span className="carousel-control control-left text-center">←</span>
-            <span className="carousel-control control-right text-center">→</span>
-
-            <div className="carousel-card">
-              <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src={serviceIcon} alt="services" />
-              </div>
-              <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
-              <p className="font-normal color-muted description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div className="carousel-card">
-              <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src={serviceIcon} alt="services" />
-              </div>
-              <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
-              <p className="font-normal color-muted description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div className="carousel-card">
-              <div className="bg-primary icon-wrapper">
-                  <img className="img icon" src={serviceIcon} alt="services" />
-              </div>
-              <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
-              <p className="font-normal color-muted description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div className="carousel-card">
-              <div className="bg-primary icon-wrapper">
-                <img   className="icon" src={serviceIcon} alt="services" />
-              </div>
-              <h3 className="text-center font-weight-600 font-black">4K Television and Netflix included</h3>
-              <p className="font-normal color-muted description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Section bgImage={aboutSectionBg}>
+        <ImageDescriptionSection>
+          <SectionDescription
+            label={about2.label}
+            heading={about2.heading}
+            invertColor={true}
+            full={true}
+          >
+            <Carousel />
+          </SectionDescription>
+        </ImageDescriptionSection>
+      </Section>
 
       <section className="section about-section image-section testimonials-section">
         <div className="section-content">

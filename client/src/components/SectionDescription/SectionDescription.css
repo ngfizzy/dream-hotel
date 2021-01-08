@@ -2,8 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
   width: 39%;
+}
+
+.SectionDescription.Full {
+  width: 100%
+}
+
+
+.SectionDescription p {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .SectionLabel,
@@ -16,7 +25,7 @@
   font-size: 42px;
   line-height: 56px;
   font-weight: 800;
-  margin-bottom: 0;
+  margin-bottom: .5rem;
   margin-top: 0;
 }
 
@@ -29,4 +38,8 @@
   font-family: 'Poppins', 'Medium';
 }
 
+.Desc {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 

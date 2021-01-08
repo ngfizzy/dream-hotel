@@ -13,10 +13,10 @@ interface Props {
 }
 
 const getSectionClasses = ({isBanner}: Omit<Props, 'style'>) => {
-  let className = 'Section ';
+  let className = 'Section bg-center ';
 
   if(isBanner)  {
-    className += 'bg-center Banner';
+    className += 'Banner';
   }
 
   return className;

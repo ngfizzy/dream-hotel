@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 
 import './ImageDescriptionSection.css';
 
-export const ImageDescriptionSection :FC<{image: string;}> =({children, image}) => {
+export const ImageDescriptionSection :FC<{image?: string;}> =({children, image}) => {
   return <div className="ImageDescriptionSection">
-    <div className="ImageDescriptionSectionContent">
+    <div className={`ImageDescriptionSectionContent`}>
       {children}
-      <div className="Image">
+      {image? <div className="Image">
           <img src={image}  alt="ad" />
-      </div>
+      </div>: null}
     </div>
   </div>
 }

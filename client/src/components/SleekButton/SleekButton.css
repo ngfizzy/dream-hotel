@@ -1,0 +1,15 @@
+.SleekButton {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--white);
+  color: var(--primary);
+  line-height: 60px;
+  text-align: center !important;
+  justify-content: center;
+}
+
+.SleekButton.ColorInverted {
+  background-color: var(--primary);
+  color:var(--white);
+}
