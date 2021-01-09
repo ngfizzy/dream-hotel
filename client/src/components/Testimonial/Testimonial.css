@@ -1,0 +1,38 @@
+.Testimonial {
+  width: 32rem;
+}
+
+.Testimonial .Profile{
+  height: 57px !important;
+  display: flex;
+  width: 150px !important;
+}
+
+.Testimonial .Profile .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+
+}
+
+.Profile .info > * {
+  margin: 0;
+}
+
+.Profile .picture-wrapper {
+  width: 57px;
+  height: 57px;
+  margin-right: .5rem;;
+}
+
+.Profile .picture {
+  width: 100% !important;
+  width: 57px !important;
+}
+
+.Profile .picture-wrapper .profession {
+  color: rgba(0, 0, 0, .5);
+  font-size: 12px;
+  line-height: 18px;
+}

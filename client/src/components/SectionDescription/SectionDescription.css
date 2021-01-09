@@ -1,0 +1,45 @@
+.SectionDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 39%;
+}
+
+.SectionDescription.Full {
+  width: 100%
+}
+
+
+.SectionDescription p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.SectionLabel,
+.SectionHeading, 
+.section-subheading {
+  margin: 10px 0;
+}
+
+.SectionHeading {
+  font-size: 42px;
+  line-height: 56px;
+  font-weight: 800;
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+.SectionSubheading {
+  font-size: 16px;
+  font-weight: bolder;
+  height: 76px;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', 'Medium';
+}
+
+.Desc {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+

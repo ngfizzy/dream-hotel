@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-bottom: 58rem; */
+  width: 100%
+}
+
+.Navbar > .link {
+  text-transform: uppercase;
+  margin: 0 20px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: medium;
+}
+
+.Navbar .brand-link {
+  margin-right: auto;
+  align-self: left;
+}

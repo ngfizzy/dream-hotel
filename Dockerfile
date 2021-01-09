@@ -1,11 +1,14 @@
-FROM node:alpine
+FROM node:12.18
 LABEL author="Olufisayo Bamidele"
 
 WORKDIR /var/www
 
 COPY . .
 
-RUN  npm install || true
+RUN cd client && npm install \
+  && cd .. && npm install
+
+# RUN  npm install || true
 
 EXPOSE 4000
 

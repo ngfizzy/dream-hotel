@@ -1,0 +1,27 @@
+.ImageDescriptionSection {
+  display: flex;
+  width: 100%;
+  /* border: solid blue; */
+  height: 100%;
+  align-items: center;
+}
+
+
+.ImageDescriptionSection .ImageDescriptionSectionContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.ImageDescriptionSectionContent .Image.Full {
+  height: 644px;
+}
+
+.ImageDescriptionSectionContent .Image.Full img {
+  height: 100%;
+}
+
+.FlexReversed {
+  flex-direction: row-reverse;
+}
